@@ -1,0 +1,79 @@
+import time
+import board
+import busio
+import adafruit_scd30
+import paho.mqtt.client as mqtt
+import json
+import sys
+
+# CONFIGURATION
+
+MQTT_BROKER = "192.168.68.55"   # <-- Pi 4 IP
+MQTT_PORT = 1883
+TOPIC = "bedroom/air"
+PUBLISH_INTERVAL = 1800  # seconds (30 minutes)
+
+
+# MQTT SETUP
+
+def on_connect(client, userdata, flags, rc):
+    if rc == 0:
+        print("Connected to MQTT broker")
+    else:
+        print("Failed to connect, return code:", rc)
+
+def on_disconnect(client, userdata, rc):
+    print("Disconnected from MQTT broker")
+    
+client = mqtt.Client()
+client.on_connect = on_connect
+client.on_disconnect = on_disconnect
+
+try:
+    client.connect(MQTT_BROKER, MQTT_PORT, 60)
+except Exception as e:
+    print("MQTT connection error:", e)
+    sys.exit(1)
+
+client.loop_start()
+
+# SENSOR SETUP
+
+try:
+    i2c = busio.I2C(board.SCL, board.SDA)
+    scd = adafruit_scd30.SCD30(i2c)
+except Exception as e:
+    print("Sensor initialization error:", e)
+    sys.exit(1)
+
+print("Starting sensor + MQTT publisher...")
+
+# MAIN LOOP
+
+while True:
+    try:
+        # Wait until data is ready
+        while not scd.data_available:
+            time.sleep(1)
+
+        data = {
+            "device_id": "device_1",
+            "co2": round(scd.CO2, 2),
+            "temp": round(scd.temperature, 2)
+        }
+
+        payload = json.dumps(data)
+
+        # Publish to MQTT
+        result = client.publish(TOPIC, payload)
+
+        if result.rc == 0:
+            print("Sent:", payload)
+        else:
+            print("Failed to send message")
+            
+        time.sleep(PUBLISH_INTERVAL)
+
+    except Exception as e:
+        print("Runtime error:", e)
+        time.sleep(5)
