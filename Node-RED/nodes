@@ -1,0 +1,1151 @@
+[
+    {
+        "id": "58557f04972e6afb",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2dc12f8cd27f6260",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "94159439122e83ad",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "67d82fdab35046af",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1db5ec512f324880",
+        "type": "ui_tab",
+        "name": "Sleep analytics",
+        "icon": "show_chart",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4a7323ce2340e8c6",
+        "type": "ui_group",
+        "name": "Weekly overview",
+        "tab": "1db5ec512f324880",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f26662cb89cc59ae",
+        "type": "ui_group",
+        "name": "Sleep environment",
+        "tab": "94159439122e83ad",
+        "order": 1,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ce212c6a9eae451",
+        "type": "ui_tab",
+        "name": "Weekly dashboard",
+        "icon": "my_library_books",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d4d19781c7dcad10",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "0ce212c6a9eae451",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d9255f581386c074",
+        "type": "ui_tab",
+        "name": "Login",
+        "icon": "login",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c92d0c3ea33eb574",
+        "type": "ui_group",
+        "name": "Login",
+        "tab": "d9255f581386c074",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "12f65ed434f6883d",
+        "type": "ui_tab",
+        "name": "Logout",
+        "icon": "logout",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1940945baf22b0f5",
+        "type": "ui_group",
+        "name": "Logout",
+        "tab": "12f65ed434f6883d",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cb966dc1b55d2661",
+        "type": "mqtt in",
+        "z": "58557f04972e6afb",
+        "name": "",
+        "topic": "bedroom/air",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "2dc12f8cd27f6260",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "e2cccd8b097f4dc7"
+            ]
+        ]
+    },
+    {
+        "id": "e2cccd8b097f4dc7",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "function 1",
+        "func": "let normalized = {\n    device_id: msg.payload.device_id,\n    timestamp: new Date().toISOString(),\n    co2: msg.payload.co2,\n    temperature: msg.payload.temp\n};\n\n// send full object forward\nmsg.payload = normalized;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "dc4de47c9260e1bc"
+            ]
+        ]
+    },
+    {
+        "id": "d03bdc70094012d7",
+        "type": "ui_template",
+        "z": "58557f04972e6afb",
+        "group": "4a7323ce2340e8c6",
+        "name": "temp: check in",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"max-width:400px;margin:auto;\">\n\n    <h2>How did you sleep?</h2>\n\n    <h3>Rate your sleep</h3>\n    <!-- Sleep score buttons -->\n    <div id=\"scoreButtons\">\n        <button ng-repeat=\"n in [1,2,3,4,5]\"\n                ng-click=\"setScore(n)\"\n                ng-class=\"{'active': score===n}\">\n            {{n}}\n        </button>\n    </div>\n\n    <br>\n\n    <!-- Disturbance input -->\n    <textarea ng-model=\"disturbance\"\n              placeholder=\"Did something disturb your sleep?\"\n              style=\"width:100%;height:80px;\"></textarea>\n\n    <br><br>\n\n    <button ng-click=\"submit()\">Submit</button>\n\n    <div ng-if=\"showSuccess\" class=\"success-box\">\n        Sleep data submitted ✓\n    </div>\n\n</div>\n\n<style>\n    #scoreButtons button {\n        margin: 5px;\n        padding: 10px 15px;\n        border: none;\n        background: #ccc;\n        cursor: pointer;\n    }\n\n    #scoreButtons button.active {\n        background: #2196F3;\n        color: white;\n    }\n\n    button {\n        width: 100%;\n        padding: 10px;\n        background: #2196F3;\n        color: white;\n        border: none;\n    }\n    .success-box {\n        margin-top: 15px;\n        padding: 10px;\n        background: #4CAF50;\n        color: white;\n        text-align: center;\n        border-radius: 5px;\n        font-weight: bold;\n    }\n</style>\n\n<script>\n    (function(scope) {\n\n    scope.score = null;\n    scope.disturbance = \"\";\n    scope.showSuccess = false;\n\n    scope.setScore = function(n) {\n        scope.score = n;\n    };\n\n    scope.submit = function() {\n\n        if (!scope.score) {\n            alert(\"Please select a sleep score\");\n            return;\n        }\n\n        // Send to Node-RED\n        scope.send({\n            payload: {\n                score: scope.score,\n                disturbances: scope.disturbance\n            }\n        });\n\n        // Show success message\n        scope.showSuccess = true;\n\n        // Auto-hide after 3 seconds\n        setTimeout(() => {\n            scope.$apply(() => {\n                scope.showSuccess = false;\n            });\n        }, 3000);\n\n        // Optional: reset form\n        scope.score = null;\n        scope.disturbance = \"\";\n\n    };\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "5fd5ec15927fd174"
+            ]
+        ]
+    },
+    {
+        "id": "5fd5ec15927fd174",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "Store sleep",
+        "func": "let baseUrl = flow.get(\"baseUrl\");\nlet userId = flow.get(\"userId\");\n\nif (!userId) {\n    node.warn(\"No userId - not logged in\");\n    return null;\n}\n\nmsg.method = \"POST\";\nmsg.url = baseUrl + \"/sleep\";\n\nmsg.payload = {\n    user_id: userId,\n    date: new Date().toLocaleDateString(\"en-CA\"),\n    sleep_score: msg.payload.score,\n    disturbances: msg.payload.disturbances\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "d7c6a0990bf608d9"
+            ]
+        ]
+    },
+    {
+        "id": "0c340c4d32a85b40",
+        "type": "ui_template",
+        "z": "58557f04972e6afb",
+        "group": "f26662cb89cc59ae",
+        "name": "display: score + distur",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div>\n    <h3>Date: {{msg.date}}</h3>\n    <p>Sleep quality: {{msg.payload.score}}</p>\n    <p>Disturbances: {{msg.payload.disturbances}}</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1200,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "559ab492319e3da9",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "retrieve sleep",
+        "func": "let items = msg.payload;\nlet selectedDate = flow.get(\"selectedDate\");\n\nif (items && items.length > 0) {\n    let latest = items[items.length - 1];\n\n    msg.payload = {\n        score: latest.sleep_score ?? \"No data\",\n        disturbances: latest.disturbances ?? \"-\"\n    };\n} else {\n    msg.payload = {\n        score: \"No data\",\n        disturbances: \"-\"\n    };\n}\n\nmsg.date = selectedDate;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 420,
+        "wires": [
+            [
+                "0c340c4d32a85b40"
+            ]
+        ]
+    },
+    {
+        "id": "d7c6a0990bf608d9",
+        "type": "http request",
+        "z": "58557f04972e6afb",
+        "name": "http request, IP node-red",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://b0rvkfbrp7.execute-api.eu-north-1.amazonaws.com/sleep",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "application/json",
+                "valueValue": ""
+            }
+        ],
+        "x": 570,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ecb96a8b2e7db070",
+        "type": "http request",
+        "z": "58557f04972e6afb",
+        "name": "http req, IP",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "application/json",
+                "valueValue": ""
+            }
+        ],
+        "x": 750,
+        "y": 180,
+        "wires": [
+            [
+                "25268bc873f67df0"
+            ]
+        ]
+    },
+    {
+        "id": "25268bc873f67df0",
+        "type": "debug",
+        "z": "58557f04972e6afb",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5529e0662942776d",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "func daily url measure",
+        "func": "let selectedDate = flow.get(\"selectedDate\");\nlet baseUrl = flow.get(\"baseUrl\");\n\nlet start = new Date(selectedDate + \"T00:00:00\");\nlet end = new Date(selectedDate + \"T23:59:59\");\n\nmsg.method = \"GET\";\nmsg.url = `${baseUrl}/measurements?device_id=device_1&start=${start.toISOString()}&end=${end.toISOString()}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 360,
+        "wires": [
+            [
+                "c3b8c9e31d76c725"
+            ]
+        ]
+    },
+    {
+        "id": "c3b8c9e31d76c725",
+        "type": "http request",
+        "z": "58557f04972e6afb",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 360,
+        "wires": [
+            [
+                "b681b282e397c1ea",
+                "d61600a029fcd3f2"
+            ]
+        ]
+    },
+    {
+        "id": "ebf82ba1ad2039d2",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "init date",
+        "func": "let now = new Date();\n\n// subtract 2 hours\nnow.setHours(now.getHours() - 2);\n\nlet localDate = now.toLocaleDateString(\"en-CA\");\n\nflow.set(\"baseUrl\", \"https://b0rvkfbrp7.execute-api.eu-north-1.amazonaws.com\");\nflow.set(\"selectedDate\", localDate);\n\nmsg.payload = localDate;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 440,
+        "wires": [
+            [
+                "5529e0662942776d",
+                "9d2d9d9189280815",
+                "6ab5424376180285",
+                "e9acce384c42811c"
+            ]
+        ]
+    },
+    {
+        "id": "79da18e70e40efe1",
+        "type": "ui_template",
+        "z": "58557f04972e6afb",
+        "group": "f26662cb89cc59ae",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"display:flex; align-items:center; gap:10px;\">\n    <button ng-click=\"prev()\">⬅</button>\n    <h3>{{}}</h3>\n    <button ng-click=\"next()\">➡</button>\n</div>\n\n<script>\n    (function(scope) {\n\n    scope.prev = function() {\n        scope.send({ action: \"prev\" });\n    };\n\n    scope.next = function() {\n        scope.send({ action: \"next\" });\n    };\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 80,
+        "y": 520,
+        "wires": [
+            [
+                "6deb7eeb058a3e13"
+            ]
+        ]
+    },
+    {
+        "id": "6deb7eeb058a3e13",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "update date",
+        "func": "let current = new Date(flow.get(\"selectedDate\"));\ncurrent.setHours(current.getHours() - 2);\n\nlet date = new Date(current);\n\nif (msg.action === \"prev\") {\n    date.setDate(date.getDate() - 1);\n}\nif (msg.action === \"next\") {\n    date.setDate(date.getDate() + 1);\n}\n\n// IMPORTANT: use local date, not ISO\nlet newDate = date.toLocaleDateString(\"en-CA\");\n\nflow.set(\"selectedDate\", newDate);\n\nmsg.payload = newDate;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 520,
+        "wires": [
+            [
+                "5529e0662942776d",
+                "9d2d9d9189280815",
+                "e9acce384c42811c",
+                "6ab5424376180285"
+            ]
+        ]
+    },
+    {
+        "id": "b681b282e397c1ea",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "format for charts",
+        "func": "let items = msg.payload || [];\n\nlet labels = [];\nlet co2Data = [];\nlet tempData = [];\n\nitems.forEach(item => {\n    let time = new Date(item.timestamp)\n        .toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });\n\n    labels.push(time);\n    co2Data.push(item.co2 ?? null);\n    tempData.push(item.temperature ?? null);\n});\n\nmsg.payload = {\n    labels: labels,\n    co2: co2Data,\n    temp: tempData\n};\n\nnode.warn(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 360,
+        "wires": [
+            [
+                "57ee4942409a2520"
+            ]
+        ]
+    },
+    {
+        "id": "9d2d9d9189280815",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "func daily url sleepses",
+        "func": "let selectedDate = flow.get(\"selectedDate\");\nlet baseUrl = flow.get(\"baseUrl\");\nlet userId = flow.get(\"userId\");\n\nlet start = selectedDate;\nlet end = selectedDate;\n\nmsg.method = \"GET\";\nmsg.url = `${baseUrl}/sleep?user_id=${userId}&start=${start}&end=${end}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 420,
+        "wires": [
+            [
+                "78969b4f8b037b1b"
+            ]
+        ]
+    },
+    {
+        "id": "78969b4f8b037b1b",
+        "type": "http request",
+        "z": "58557f04972e6afb",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 420,
+        "wires": [
+            [
+                "559ab492319e3da9",
+                "a7d5b2df7ab5d30a"
+            ]
+        ]
+    },
+    {
+        "id": "d61600a029fcd3f2",
+        "type": "debug",
+        "z": "58557f04972e6afb",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "88a07701e04dbd70",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "avg temp+co2",
+        "func": "// --- Get stored data ---\nlet measurements = msg.payload.measure || [];\nlet sleepSessions = msg.payload.sleep || [];\n\nif (measurements.length === 0 && sleepSessions.length === 0) {\n    node.warn(\"No data available\");\n    return null;\n}\n\n// --- Build daily map ---\nlet dailyMap = {};\n\n// 1. Aggregate temperature + CO2\nmeasurements.forEach(m => {\n    let d = new Date(m.timestamp);\n    d.setHours(d.getHours() - 2); \n    let date = d.toLocaleDateString(\"en-CA\");\n    \n    if (!dailyMap[date]) {\n        dailyMap[date] = {\n            tempSum: 0,\n            tempCount: 0,\n            co2Sum: 0,\n            co2Count: 0,\n            sleepScore: null\n        };\n    }\n\n    if (m.temperature !== undefined) {\n        dailyMap[date].tempSum += m.temperature;\n        dailyMap[date].tempCount += 1;\n    }\n\n    if (m.co2 !== undefined) {\n        dailyMap[date].co2Sum += m.co2;\n        dailyMap[date].co2Count += 1;\n    }\n});\n\n// 2. Ensure sleep dates exist\nsleepSessions.forEach(s => {\n    let date = s.date;\n\n    if (!dailyMap[date]) {\n        dailyMap[date] = {\n            tempSum: 0,\n            tempCount: 0,\n            co2Sum: 0,\n            co2Count: 0,\n            sleepScore: null\n        };\n    }\n});\n\n// 3. Compute averages\nfor (let date in dailyMap) {\n    let d = dailyMap[date];\n\n    d.avgTemp = d.tempCount > 0 ? d.tempSum / d.tempCount : null;\n    d.avgCO2 = d.co2Count > 0 ? d.co2Sum / d.co2Count : null;\n}\n\n// 4. Merge sleep scores\nsleepSessions.forEach(s => {\n    let date = s.date;\n    dailyMap[date].sleepScore = s.sleep_score;\n});\n\n// --- FORCE 7 DAYS ---\nlet selectedDate = flow.get(\"selectedDate\");\n\n// Start Monday\nlet base = new Date(selectedDate + \"T00:00:00\");\nlet day = base.getDay();\nlet diffToMonday = (day === 0 ? -6 : 1 - day);\nbase.setDate(base.getDate() + diffToMonday);\n\nlet result = [];\n\nfor (let i = 0; i < 7; i++) {\n    let d = new Date(base);\n    d.setDate(base.getDate() + i);\n\n    let key = d.toLocaleDateString(\"en-CA\");\n    let entry = dailyMap[key] || {};\n\n    result.push({\n        date: key,\n        avgTemp: entry.avgTemp ?? null,\n        avgCO2: entry.avgCO2 ?? null,\n        sleepScore: entry.sleepScore ?? null\n    });\n}\n\n// --- Sort ---\nresult.sort((a, b) => a.date.localeCompare(b.date));\n\n// --- Format for charts ---\nlet labels = [];\nlet tempData = [];\nlet co2Data = [];\nlet sleepData = [];\n\nresult.forEach(d => {\n    let dayName = new Date(d.date + \"T00:00:00\")\n        .toLocaleDateString(\"en-US\", { weekday: \"short\" });\n\n    labels.push(dayName);\n    tempData.push(d.avgTemp);\n    co2Data.push(d.avgCO2);\n    sleepData.push(d.sleepScore);\n});\n\n// --- Final payload ---\nmsg.payload = {\n    labels: labels,\n    temp: tempData,\n    co2: co2Data,\n    sleep: sleepData\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 540,
+        "wires": [
+            [
+                "89939fda416b7b9f",
+                "70317575ae559f7a"
+            ]
+        ]
+    },
+    {
+        "id": "89939fda416b7b9f",
+        "type": "ui_template",
+        "z": "58557f04972e6afb",
+        "group": "d4d19781c7dcad10",
+        "name": "",
+        "order": 0,
+        "width": "10",
+        "height": "11",
+        "format": "<div style=\"margin-bottom:20px;\">\n    <canvas id=\"sleepTempChart{{$id}}\" style=\"height:300px;\"></canvas>\n</div>\n\n<div>\n    <canvas id=\"sleepCO2Chart{{$id}}\" style=\"height:300px;\"></canvas>\n</div>\n\n<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n\n<script>\n    (function(scope) {\n\n    scope.sleepTempChart = null;\n    scope.sleepCO2Chart = null;\n\n    scope.$watch('msg.payload', function(data) {\n\n        if (!data) return;\n\n        setTimeout(() => {\n\n            // =========================\n            // 1. SLEEP + TEMP\n            // =========================\n            let tempCanvas = document.getElementById('sleepTempChart' + scope.$id);\n            if (tempCanvas) {\n                let ctx = tempCanvas.getContext('2d');\n\n                if (scope.sleepTempChart) scope.sleepTempChart.destroy();\n\n                scope.sleepTempChart = new Chart(ctx, {\n                    type: 'line',\n                    data: {\n                        labels: data.labels,\n                        datasets: [\n                            {\n                                label: 'Temperature (°C)',\n                                data: data.temp,\n                                borderColor: '#00bcd4',\n                                fill: false,\n                                yAxisID: 'temp-axis'\n                            },\n                            {\n                                label: 'Sleep Score',\n                                data: data.sleep,\n                                borderColor: '#ff9800',\n                                fill: false,\n                                yAxisID: 'sleep-axis'\n                            }\n                        ]\n                    },\n                    options: {\n                        responsive: true,\n                        scales: {\n                            'temp-axis': {\n                                type: 'linear',\n                                position: 'left',\n                                min: 0,\n                                max: 35\n                            },\n                            'sleep-axis': {\n                                type: 'linear',\n                                position: 'right',\n                                min: 1,\n                                max: 5,\n                                grid: { drawOnChartArea: false }\n                            }\n                        }\n                    }\n                });\n            }\n\n            // =========================\n            // 2. SLEEP + CO2\n            // =========================\n            let co2Canvas = document.getElementById('sleepCO2Chart' + scope.$id);\n            if (co2Canvas) {\n                let ctx = co2Canvas.getContext('2d');\n\n                if (scope.sleepCO2Chart) scope.sleepCO2Chart.destroy();\n\n                scope.sleepCO2Chart = new Chart(ctx, {\n                    type: 'line',\n                    data: {\n                        labels: data.labels,\n                        datasets: [\n                            {\n                                label: 'CO2 (ppm)',\n                                data: data.co2,\n                                borderColor: '#4caf50',\n                                fill: false,\n                                yAxisID: 'co2-axis'\n                            },\n                            {\n                                label: 'Sleep Score',\n                                data: data.sleep,\n                                borderColor: '#ff9800',\n                                fill: false,\n                                yAxisID: 'sleep-axis'\n                            }\n                        ]\n                    },\n                    options: {\n                        responsive: true,\n                        scales: {\n                            'co2-axis': {\n                                type: 'linear',\n                                position: 'left'\n                            },\n                            'sleep-axis': {\n                                type: 'linear',\n                                position: 'right',\n                                min: 1,\n                                max: 5,\n                                grid: { drawOnChartArea: false }\n                            }\n                        }\n                    }\n                });\n            }\n\n        }, 50);\n\n    });\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1560,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7d5b2df7ab5d30a",
+        "type": "debug",
+        "z": "58557f04972e6afb",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "81f5f9f58523203b",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "func measure",
+        "func": "flow.set(\"weekly_measure\", msg.payload);\nreturn null;   ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 480,
+        "wires": [
+            [
+                "f5db018603b6cd36"
+            ]
+        ]
+    },
+    {
+        "id": "ab3606d9f378c77c",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "func sleep",
+        "func": "flow.set(\"weekly_sleep\", msg.payload);\nreturn msg;    ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 540,
+        "wires": [
+            [
+                "a5d6c6437e0bc61b",
+                "67c571700a3fea66"
+            ]
+        ]
+    },
+    {
+        "id": "70317575ae559f7a",
+        "type": "debug",
+        "z": "58557f04972e6afb",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "6ab5424376180285",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "func weekly url measure",
+        "func": "let selectedDate = flow.get(\"selectedDate\");\nlet baseUrl = flow.get(\"baseUrl\");\n\n// find Monday\nlet base = new Date(selectedDate);\nlet day = base.getDay();\nlet diffToMonday = (day === 0 ? -6 : 1 - day);\nbase.setDate(base.getDate() + diffToMonday);\n\nlet start = new Date(base);\nstart.setHours(0,0,0,0);\n\nlet end = new Date(base);\nend.setDate(base.getDate() + 6);\nend.setHours(23,59,59,999);\n\nmsg.method = \"GET\";\nmsg.url = `${baseUrl}/measurements?device_id=device_1&start=${start.toISOString()}&end=${end.toISOString()}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 480,
+        "wires": [
+            [
+                "e76a31745ef574bf"
+            ]
+        ]
+    },
+    {
+        "id": "e76a31745ef574bf",
+        "type": "http request",
+        "z": "58557f04972e6afb",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 480,
+        "wires": [
+            [
+                "81f5f9f58523203b",
+                "35120e555a50f6e1"
+            ]
+        ]
+    },
+    {
+        "id": "e9acce384c42811c",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "func weekly url sleepses",
+        "func": "let selectedDate = flow.get(\"selectedDate\");\nlet baseUrl = flow.get(\"baseUrl\");\nlet userId = flow.get(\"userId\");\n\n// find Monday\nlet base = new Date(selectedDate);\nlet day = base.getDay();\nlet diffToMonday = (day === 0 ? -6 : 1 - day);\nbase.setDate(base.getDate() + diffToMonday);\n\nlet start = new Date(base).toLocaleDateString(\"en-CA\");\n\nlet endDate = new Date(base);\nendDate.setDate(base.getDate() + 6);\nlet end = endDate.toLocaleDateString(\"en-CA\");\n\nmsg.method = \"GET\";\nmsg.url = `${baseUrl}/sleep?user_id=${userId}&start=${start}&end=${end}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 540,
+        "wires": [
+            [
+                "8be6081e4161eb34"
+            ]
+        ]
+    },
+    {
+        "id": "8be6081e4161eb34",
+        "type": "http request",
+        "z": "58557f04972e6afb",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 540,
+        "wires": [
+            [
+                "ab3606d9f378c77c",
+                "f0a2e4705caab4f3"
+            ]
+        ]
+    },
+    {
+        "id": "0dd1e12d18fbfcc9",
+        "type": "debug",
+        "z": "58557f04972e6afb",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1340,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "35120e555a50f6e1",
+        "type": "debug",
+        "z": "58557f04972e6afb",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "f0a2e4705caab4f3",
+        "type": "debug",
+        "z": "58557f04972e6afb",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "52ad82a1fbc28649",
+        "type": "inject",
+        "z": "58557f04972e6afb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 440,
+        "wires": [
+            [
+                "ebf82ba1ad2039d2"
+            ]
+        ]
+    },
+    {
+        "id": "a5d6c6437e0bc61b",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "combine",
+        "func": "let measurements = flow.get(\"weekly_measure\");\nlet sleepSessions = flow.get(\"weekly_sleep\");\n\n// Debug visibility\n//node.warn({\n//    measure: measurements ? measurements.length : 0,\n//    sleep: sleepSessions ? sleepSessions.length : 0\n//});\n\n// WAIT until both exist\nif (!measurements || !sleepSessions) {\n    node.warn(\"Waiting for both datasets...\");\n    return null;\n}\n\nmsg.payload = {\n    measure: measurements,\n    sleep: sleepSessions\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 540,
+        "wires": [
+            [
+                "88a07701e04dbd70",
+                "0dd1e12d18fbfcc9"
+            ]
+        ]
+    },
+    {
+        "id": "f5db018603b6cd36",
+        "type": "debug",
+        "z": "58557f04972e6afb",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "67c571700a3fea66",
+        "type": "debug",
+        "z": "58557f04972e6afb",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "57ee4942409a2520",
+        "type": "ui_template",
+        "z": "58557f04972e6afb",
+        "group": "f26662cb89cc59ae",
+        "name": "charts",
+        "order": 5,
+        "width": "13",
+        "height": "18",
+        "format": "<div>\n    <canvas id=\"co2Chart{{$id}}\" height=\"200\"></canvas>\n    <canvas id=\"tempChart{{$id}}\" height=\"200\"></canvas>\n</div>\n\n<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n\n<script>\n    (function(scope) {\n\n    scope.co2Chart = null;\n    scope.tempChart = null;\n\n    scope.$watch('msg.payload', function(data) {\n\n        if (!data) return;\n\n        setTimeout(() => {\n\n            // --- CO2 ---\n            let co2Canvas = document.getElementById('co2Chart' + scope.$id);\n            if (co2Canvas) {\n                let ctx1 = co2Canvas.getContext('2d');\n\n                if (scope.co2Chart) scope.co2Chart.destroy();\n\n                scope.co2Chart = new Chart(ctx1, {\n                    type: 'line',\n                    data: {\n                        labels: data.labels,\n                        datasets: [{\n                            label: 'CO2 (ppm)',\n                            data: data.co2,\n                            borderColor: '#4caf50',\n                            fill: false,\n                            tension: 0.2\n                        }]\n                    },\n                    options: {\n                        responsive: true\n                    }\n                });\n            }\n\n            // --- TEMP ---\n            let tempCanvas = document.getElementById('tempChart' + scope.$id);\n            if (tempCanvas) {\n                let ctx2 = tempCanvas.getContext('2d');\n\n                if (scope.tempChart) scope.tempChart.destroy();\n\n                scope.tempChart = new Chart(ctx2, {\n                    type: 'line',\n                    data: {\n                        labels: data.labels,\n                        datasets: [{\n                            label: 'Temperature (°C)',\n                            data: data.temp,\n                            borderColor: '#00bcd4',\n                            fill: false,\n                            tension: 0.2\n                        }]\n                    },\n                    options: {\n                        responsive: true\n                    }\n                });\n            }\n\n        }, 50);\n\n    });\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1150,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "efa7255a1fc475b5",
+        "type": "ui_template",
+        "z": "58557f04972e6afb",
+        "group": "c92d0c3ea33eb574",
+        "name": "login",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "format": "<div style=\"max-width:400px;margin:auto;\">\n\n    <h2>Login / Register</h2>\n\n    <input ng-model=\"email\" placeholder=\"Email\" style=\"width:100%;margin-bottom:10px;\">\n    <input ng-model=\"password\" type=\"password\" placeholder=\"Password\" style=\"width:100%;margin-bottom:10px;\">\n\n    <button ng-click=\"login()\">Login</button>\n    <button ng-click=\"register()\">Register</button>\n\n    <p ng-style=\"{'color': messageColor, 'font-weight': 'bold'}\">\n        {{message}}\n    </p>\n\n</div>\n\n<script>\n    (function(scope) {\n\n    scope.message = \"\";\n    scope.messageColor = \"black\";\n\n    let timer = null;   // DEFINE TIMER\n\n    scope.login = function() {\n        scope.send({\n            topic: \"login\",\n            payload: {\n                email: scope.email,\n                password: scope.password\n            }\n        });\n    };\n\n    scope.register = function() {\n        scope.send({\n            topic: \"register\",\n            payload: {\n                email: scope.email,\n                password: scope.password,\n                passwordConfirm: scope.password\n            }\n        });\n    };\n\n    scope.$watch('msg', function(msg) {\n        \n        if (!msg || !msg.payload) return;\n\n        // Handle PocketBase error FIRST\n        if (msg.payload.code === 400) {\n            scope.message = \"Invalid email or password\";\n            scope.messageColor = \"red\";\n            clearMessage();\n            return;\n        }\n\n        // Ignore unrelated messages\n        if (msg.payload.success === undefined) return;\n\n        // SUCCESS\n        if (msg.payload.success === true) {\n            scope.message = \"Login successful\";\n            scope.messageColor = \"green\";\n            clearMessage();\n        }\n\n        // FAIL\n        else if (msg.payload.success === false) {\n            scope.message = \"Login failed\";\n            scope.messageColor = \"red\";\n            clearMessage();\n        }\n\n    });\n    \n    function clearMessage() {\n        if (timer) clearTimeout(timer);\n\n        timer = setTimeout(() => {\n            scope.$applyAsync(() => {\n                scope.message = \"\";\n            });\n        }, 3000);\n    }\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 90,
+        "y": 640,
+        "wires": [
+            [
+                "0d9d225718cb5fe8"
+            ]
+        ]
+    },
+    {
+        "id": "0d9d225718cb5fe8",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "handle login",
+        "func": "let baseUrl = flow.get(\"baseUrl\");\n\nif (msg.topic === \"login\") {\n    msg.method = \"POST\";\n    msg.url = baseUrl + \"/login\";\n    return msg;\n}\n\nif (msg.topic === \"register\") {\n    msg.method = \"POST\";\n    msg.url = baseUrl + \"/register\";\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 640,
+        "wires": [
+            [
+                "d2519acc17866f1d"
+            ]
+        ]
+    },
+    {
+        "id": "d2519acc17866f1d",
+        "type": "http request",
+        "z": "58557f04972e6afb",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 450,
+        "y": 640,
+        "wires": [
+            [
+                "23f5cacb3d227b2a"
+            ]
+        ]
+    },
+    {
+        "id": "23f5cacb3d227b2a",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "store session login",
+        "func": "if (msg.payload && msg.payload.success && msg.payload.user_id) {\n\n    flow.set(\"userId\", msg.payload.user_id);\n\n    node.warn(\"Logged in as: \" + msg.payload.user_id);\n\n    msg.payload = {\n        success: true,\n        user_id: msg.payload.user_id\n    };\n\n    return msg;   // ONLY return on success\n}\n\n//  STOP the loop on failure\nnode.warn(\"Login failed or invalid response\");\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 640,
+        "wires": [
+            [
+                "efa7255a1fc475b5"
+            ]
+        ]
+    },
+    {
+        "id": "807047f9b69918bc",
+        "type": "ui_template",
+        "z": "58557f04972e6afb",
+        "group": "1940945baf22b0f5",
+        "name": "Logut",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"max-width:300px;margin:auto;text-align:center;\">\n\n    <h3>Account</h3>\n\n    <button ng-click=\"logout()\">Logout</button>\n\n    <p ng-style=\"{'color': messageColor, 'font-weight': 'bold'}\">\n        {{message}}\n    </p>\n\n</div>\n\n<script>\n    (function(scope) {\n\n    scope.message = \"\";\n    scope.messageColor = \"black\";\n\n    scope.logout = function() {\n        scope.send({\n            topic: \"logout\"\n        });\n    };\n\n    scope.$watch('msg', function(msg) {\n\n        if (!msg || !msg.payload) return;\n\n        if (msg.payload.loggedOut === true) {\n            scope.message = \"✅ Logged out\";\n            scope.messageColor = \"green\";\n        }\n\n    });\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 210,
+        "y": 700,
+        "wires": [
+            [
+                "a20dbd4833d95e70"
+            ]
+        ]
+    },
+    {
+        "id": "a20dbd4833d95e70",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "logout func",
+        "func": "if (msg.topic === \"logout\") {\n\n    flow.set(\"userId\", null);\n\n    node.warn(\"User logged out\");\n\n    msg.payload = {\n        loggedOut: true\n    };\n\n    delete msg.topic;\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 700,
+        "wires": [
+            [
+                "807047f9b69918bc"
+            ]
+        ]
+    },
+    {
+        "id": "dc4de47c9260e1bc",
+        "type": "function",
+        "z": "58557f04972e6afb",
+        "name": "function 2",
+        "func": "msg.method = \"POST\";\nmsg.url = \"https://b0rvkfbrp7.execute-api.eu-north-1.amazonaws.com/measurements\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "ecb96a8b2e7db070"
+            ]
+        ]
+    },
+    {
+        "id": "46710996778ef322",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
