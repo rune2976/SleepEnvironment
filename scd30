@@ -8,7 +8,7 @@ import sys
 
 # CONFIGURATION
 
-MQTT_BROKER = "192.168.68.55"   # <-- Pi 4 IP
+MQTT_BROKER = "192.168.68.59"   # <-- Pi 4 IP
 MQTT_PORT = 1883
 TOPIC = "bedroom/air"
 PUBLISH_INTERVAL = 1800  # seconds (30 minutes)
@@ -24,10 +24,14 @@ def on_connect(client, userdata, flags, rc):
 
 def on_disconnect(client, userdata, rc):
     print("Disconnected from MQTT broker")
-    
+
+def on_publish(client, userdata, mid):
+    print(f"PUBACK received for message {mid}")
+
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_disconnect = on_disconnect
+client.on_publish = on_publish
 
 try:
     client.connect(MQTT_BROKER, MQTT_PORT, 60)
@@ -48,6 +52,7 @@ except Exception as e:
 
 print("Starting sensor + MQTT publisher...")
 
+
 # MAIN LOOP
 
 while True:
@@ -65,13 +70,15 @@ while True:
         payload = json.dumps(data)
 
         # Publish to MQTT
-        result = client.publish(TOPIC, payload)
+        result = client.publish(TOPIC, payload, qos=1)
+
+        result.wait_for_publish()
 
         if result.rc == 0:
             print("Sent:", payload)
         else:
             print("Failed to send message")
-            
+
         time.sleep(PUBLISH_INTERVAL)
 
     except Exception as e:
